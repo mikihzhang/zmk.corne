@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  BASE:
-  - {t: TAB, h: LC(LS(LALT))}
+  base:
+  - {t: TAB, h: Ctl+Sft+ LALT}
   - Q
   - W
   - E
@@ -38,12 +38,12 @@ layers:
   - /
   - LEFT ALT
   - LEFT GUI
-  - NAV
+  - nav
   - BSPC
   - SPACE
-  - SYMBOLS
+  - symbols
   - ENTER
-  SYMBOLS:
+  symbols:
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -86,17 +86,17 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  NAV:
-  - LG(LC(TAB))
+  nav:
+  - Gui+Ctl+ TAB
   - {t: ▽, type: trans}
-  - LG(LEFT BRACKET)
-  - LS(TAB)
+  - Gui+ [
+  - Sft+ TAB
   - TAB
-  - LG(RIGHT BRACKET)
-  - LA(LEFT)
-  - LA(DOWN)
-  - LA(UP)
-  - LA(RIGHT)
+  - Gui+ ]
+  - Alt+ LEFT
+  - Alt+ DOWN
+  - Alt+ UP
+  - Alt+ RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ESC
@@ -117,19 +117,19 @@ layers:
   - PG DN
   - PG UP
   - END
-  - LG(LEFT)
-  - LG(DOWN)
-  - LG(UP)
-  - LG(RIGHT)
+  - Gui+ LEFT
+  - Gui+ DOWN
+  - Gui+ UP
+  - Gui+ RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - LC(LG(SPACE))
+  - Ctl+Gui+ SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  EXT:
+  extended:
   - {t: ▽, type: trans}
   - F1
   - F2
